@@ -1,0 +1,148 @@
+Microsoft DHCP Service Activity Log
+
+Event ID  Meaning
+00	The log was started.
+01	The log was stopped.
+02	The log was temporarily paused due to low disk space.
+10	A new IP address was leased to a client.
+11	A lease was renewed by a client.
+12	A lease was released by a client.
+13	An IP address was found to be in use on the network.
+14	A lease request could not be satisfied because the scope's address pool was exhausted.
+15	A lease was denied.
+16	A lease was deleted.
+17	A lease was expired and DNS records for an expired leases have not been deleted.
+18	A lease was expired and DNS records were deleted.
+20	A BOOTP address was leased to a client.
+21	A dynamic BOOTP address was leased to a client.
+22	A BOOTP request could not be satisfied because the scope's address pool for BOOTP was exhausted.
+23	A BOOTP IP address was deleted after checking to see it was not in use.
+24	IP address cleanup operation has began.
+25	IP address cleanup statistics.
+30	DNS update request to the named DNS server.
+31	DNS update failed.
+32	DNS update successful.
+33	Packet dropped due to NAP policy.
+34	DNS update request failed.as the DNS update request queue limit exceeded.
+35	DNS update request failed.
+36	Packet dropped because the server is in failover standby role or the hash of the client ID does not match.
+50+	Codes above 50 are used for Rogue Server Detection information.
+
+QResult: 0: NoQuarantine, 1:Quarantine, 2:Drop Packet, 3:Probation,6:No Quarantine Information ProbationTime:Year-Month-Day Hour:Minute:Second:MilliSecond.
+
+ID,Date,Time,Description,IP Address,Host Name,MAC Address,User Name, TransactionID, QResult,Probationtime, CorrelationID,Dhcid,VendorClass(Hex),VendorClass(ASCII),UserClass(Hex),UserClass(ASCII),RelayAgentInformation,DnsRegError.
+
+
+
+00,02/20/24,00:00:00,Started,,,,,0,6,,,,,,,,,0
+55,02/20/24,00:00:11,Authorized(servicing),,iefp.local,,,0,6,,,,,,,,,0
+24,02/20/24,00:00:20,Database Cleanup Begin,,,,,0,6,,,,,,,,,0
+25,02/20/24,00:00:30,0 leases expired and 0 leases deleted,,,,,0,6,,,,,,,,,0
+11,02/20/24,00:30:00,Renew,192.168.1.106,SrvFicheiros.iefp.local,00155D010203,,3355777625,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,02:14:07,Renew,45.33.32.156,kali,DEADBEEF0001,,1490525779,0,,,,,,,,,0
+11,02/20/24,02:14:09,Renew,185.220.101.1,kali,DEADBEEF0001,,900724700,0,,,,,,,,,0
+11,02/20/24,02:14:11,Renew,77.88.8.8,kali,DEADBEEF0001,,1668268134,0,,,,,,,,,0
+11,02/20/24,02:14:13,Renew,114.114.114.114,kali,DEADBEEF0001,,631896867,0,,,,,,,,,0
+11,02/20/24,02:14:15,Renew,34.192.125.239,kali,DEADBEEF0001,,3523169052,0,,,,,,,,,0
+11,02/20/24,02:14:50,Renew,45.33.32.156,kali,DEADBEEF0001,,2023710615,0,,,,,,,,,0
+11,02/20/24,02:15:20,Renew,45.33.32.156,kali,DEADBEEF0001,,956331925,0,,,,,,,,,0
+11,02/20/24,03:00:00,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,4176645047,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:01:05,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,1632916494,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:02:10,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,2414723724,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:03:15,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,450788491,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:04:20,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,413878679,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:05:25,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,3874343098,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:06:30,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,1770355183,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:07:35,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,3833188041,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:08:40,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,2360935918,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:09:45,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,957142594,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:10:50,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,655844801,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,03:11:55,Renew,192.168.1.151,PCPeriodico.iefp.local,080027BEAC00,,4096429612,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+10,02/20/24,05:40:00,Assign,192.168.1.180,,02C3FBCF68E4,,3986360344,0,,,,,,,,,0
+10,02/20/24,05:40:01,Assign,192.168.1.181,,0223CEA5FC1F,,407716406,0,,,,,,,,,0
+10,02/20/24,05:40:02,Assign,192.168.1.182,,020BDCB9B312,,3173036339,0,,,,,,,,,0
+10,02/20/24,05:40:04,Assign,192.168.1.183,,026882AA696D,,2876954968,0,,,,,,,,,0
+10,02/20/24,05:40:06,Assign,192.168.1.184,,023BCD6AF9D6,,3282786886,0,,,,,,,,,0
+10,02/20/24,05:40:07,Assign,192.168.1.185,,020DAE0CDC3A,,988607735,0,,,,,,,,,0
+10,02/20/24,05:40:09,Assign,192.168.1.186,,02BF9CDFA87E,,3182352360,0,,,,,,,,,0
+10,02/20/24,05:40:11,Assign,192.168.1.187,,02EC00EA4497,,169390016,0,,,,,,,,,0
+10,02/20/24,05:40:13,Assign,192.168.1.188,,02051E566CB5,,3348689095,0,,,,,,,,,0
+10,02/20/24,05:40:15,Assign,192.168.1.189,,026BB0513683,,1120402542,0,,,,,,,,,0
+10,02/20/24,05:40:17,Assign,192.168.1.190,,021A449C8B9F,,1765989528,0,,,,,,,,,0
+10,02/20/24,05:40:18,Assign,192.168.1.191,,021E87899AC4,,2535596851,0,,,,,,,,,0
+14,02/20/24,05:40:20,Address Pool Exhausted,,,,,0,6,,,,,,,,,0
+14,02/20/24,05:40:21,Address Pool Exhausted,,,,,0,6,,,,,,,,,0
+14,02/20/24,05:40:22,Address Pool Exhausted,,,,,0,6,,,,,,,,,0
+15,02/20/24,05:40:24,NACK,,,02BD49CDFDC0,,0,6,,,,,,,,,0
+11,02/20/24,06:00:06,Renew,192.168.1.104,PrinterRH.iefp.local,0026B9D4E5F6,,997702528,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+10,02/20/24,07:40:14,Assign,192.168.1.101,PCMarta.iefp.local,080027A1B2C1,,3894050749,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+30,02/20/24,07:40:55,DNS Update Request,192.168.1.101,PCMarta.iefp.local,,,0,6,,,,,,,,,0
+32,02/20/24,07:41:02,DNS Update Successful,192.168.1.101,PCMarta.iefp.local,,,0,6,,,,,,,,,0
+10,02/20/24,07:41:35,Assign,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,751757444,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+30,02/20/24,07:41:56,DNS Update Request,192.168.1.102,PCRui.iefp.local,,,0,6,,,,,,,,,0
+32,02/20/24,07:42:03,DNS Update Successful,192.168.1.102,PCRui.iefp.local,,,0,6,,,,,,,,,0
+10,02/20/24,07:42:41,Assign,192.168.1.103,PCInes.iefp.local,080027A1B2C3,,2305986303,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+30,02/20/24,07:42:54,DNS Update Request,192.168.1.103,PCInes.iefp.local,,,0,6,,,,,,,,,0
+32,02/20/24,07:43:14,DNS Update Successful,192.168.1.103,PCInes.iefp.local,,,0,6,,,,,,,,,0
+10,02/20/24,07:43:44,Assign,192.168.1.104,PrinterRH.iefp.local,0026B9D4E5F6,,1625153305,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+30,02/20/24,07:43:55,DNS Update Request,192.168.1.104,PrinterRH.iefp.local,,,0,6,,,,,,,,,0
+32,02/20/24,07:44:01,DNS Update Successful,192.168.1.104,PrinterRH.iefp.local,,,0,6,,,,,,,,,0
+10,02/20/24,07:44:42,Assign,192.168.1.105,LaptopDir.iefp.local,3C970E9A1B2C,,1238636290,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+30,02/20/24,07:44:58,DNS Update Request,192.168.1.105,LaptopDir.iefp.local,,,0,6,,,,,,,,,0
+32,02/20/24,07:45:10,DNS Update Successful,192.168.1.105,LaptopDir.iefp.local,,,0,6,,,,,,,,,0
+10,02/20/24,07:45:47,Assign,192.168.1.106,SrvFicheiros.iefp.local,00155D010203,,3794004127,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+30,02/20/24,07:45:54,DNS Update Request,192.168.1.106,SrvFicheiros.iefp.local,,,0,6,,,,,,,,,0
+32,02/20/24,07:46:11,DNS Update Successful,192.168.1.106,SrvFicheiros.iefp.local,,,0,6,,,,,,,,,0
+11,02/20/24,08:05:11,Renew,192.168.1.101,PCMarta.iefp.local,080027A1B2C1,,3524708900,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,08:10:21,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,742599381,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,08:20:00,Renew,10.0.2.15,VM-Kali.iefp.local,080027E51D1B,,1446225150,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,08:25:00,Renew,172.16.5.20,PCContab.iefp.local,080027E51D1C,,448149319,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,08:30:00,Renew,192.168.1.106,SrvFicheiros.iefp.local,00155D010203,,269631507,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,08:30:00,Renew,169.254.44.12,PCSemDHCP,080027E51D1D,,802817491,0,,,,,,,,,0
+11,02/20/24,09:00:12,Renew,192.168.1.130,PCJoana.iefp.local,080027D1D1D1,,1266752077,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,09:00:32,Renew,192.168.1.105,LaptopDir.iefp.local,3C970E9A1B2C,,947823252,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,09:30:17,Renew,192.168.1.103,PCInes.iefp.local,080027A1B2C3,,2196257823,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,10:10:23,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,696817542,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,10:15:00,Renew,192.168.1.150,PCInstavel.iefp.local,080027C0FFEE,,2534056916,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,10:15:20,Renew,192.168.1.150,PCInstavel.iefp.local,080027C0FFEE,,4189001100,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+31,02/20/24,10:15:32,DNS Update Failed,192.168.1.150,PCInstavel.iefp.local,,,0,6,,,,,,,,,1460
+11,02/20/24,10:15:45,Renew,192.168.1.150,PCInstavel.iefp.local,080027C0FFEE,,3126627522,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,10:16:10,Renew,192.168.1.150,PCInstavel.iefp.local,080027C0FFEE,,1085315421,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,10:16:50,Renew,192.168.1.150,PCInstavel.iefp.local,080027C0FFEE,,1594967187,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,10:17:30,Renew,192.168.1.150,PCInstavel.iefp.local,080027C0FFEE,,1806910615,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,11:00:10,Renew,192.168.1.130,PCJoana.iefp.local,080027D1D1D1,,2420687484,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+13,02/20/24,11:45:02,Address In Use,192.168.1.130,PCAtacante,080027666666,,0,6,,,,,,,,,0
+11,02/20/24,11:45:05,Renew,192.168.1.130,PCAtacante,080027666666,,3877180202,0,,,,,,,,,0
+15,02/20/24,11:46:00,NACK,192.168.1.130,PCJoana.iefp.local,080027D1D1D1,,0,6,,,,,,,,,0
+11,02/20/24,12:00:05,Renew,192.168.1.104,PrinterRH.iefp.local,0026B9D4E5F6,,3679022601,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+24,02/20/24,12:00:20,Database Cleanup Begin,,,,,0,6,,,,,,,,,0
+25,02/20/24,12:00:31,2 leases expired and 2 leases deleted,,,,,0,6,,,,,,,,,0
+11,02/20/24,12:05:11,Renew,192.168.1.101,PCMarta.iefp.local,080027A1B2C1,,141566235,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,12:10:20,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,743781463,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,13:00:11,Renew,192.168.1.130,PCJoana.iefp.local,080027D1D1D1,,107841945,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,13:00:33,Renew,192.168.1.105,LaptopDir.iefp.local,3C970E9A1B2C,,840447908,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,13:30:18,Renew,192.168.1.103,PCInes.iefp.local,080027A1B2C3,,969114033,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,13:12:00,Renew,192.168.1.103,PCInes.iefp.local,080027A1B2C3,,3321257230,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,14:10:23,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,1545469718,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,14:20:00,Renew,192.168.1.160,PCVisitante.iefp.local,080027A1B2C2,,1817766068,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,15:20:02,Renew,192.168.1.160,PCVisitante.iefp.local,080027A1B2C2,,1927772579,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,15:30:00,Renew,8.8.8.8,dns-google,0A0B0C0D0E01,,1453968791,0,,,,,,,,,0
+11,02/20/24,15:30:40,Renew,1.1.1.1,dns-cf,0A0B0C0D0E02,,3369026734,0,,,,,,,,,0
+11,02/20/24,15:31:20,Renew,208.67.222.222,dns-opendns,0A0B0C0D0E03,,1059125593,0,,,,,,,,,0
+11,02/20/24,15:32:00,Renew,198.51.100.23,PCTeste,0A0B0C0D0E04,,4031719049,0,,,,,,,,,0
+11,,,Renew,192.168.1.170,PCFantasma.iefp.local,080027FA0001,,508986713,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,16:05:00,Renew,999.999.999.999,PCInvalido,080027FA0002,,1630149496,0,,,,,,,,,0
+11,02/20/24,16:05:13,Renew,192.168.1.101,PCMarta.iefp.local,080027A1B2C1,,3677379519,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,16:10:00,Renew,,PCSemIP.iefp.local,080027FA0003,,1376062356,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,16:10:23,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,2745956160,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,16:20:00,Renew,192.168.1.171,PCSemMAC.iefp.local,,,345362543,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,16:30:01,Renew,192.168.1.106,SrvFicheiros.iefp.local,00155D010203,,862845031,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,17:00:33,Renew,192.168.1.105,LaptopDir.iefp.local,3C970E9A1B2C,,1984006956,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,17:20:00,Renew,192.168.1.171,PCSemMAC.iefp.local,,,2154658695,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,17:30:15,Renew,192.168.1.103,PCInes.iefp.local,080027A1B2C3,,3048241470,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+12,02/20/24,17:50:12,Release,192.168.1.105,LaptopDir.iefp.local,3C970E9A1B2C,,2894807200,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,18:00:07,Renew,192.168.1.104,PrinterRH.iefp.local,0026B9D4E5F6,,2946078489,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,18:10:20,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,188019625,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,20:05:13,Renew,192.168.1.101,PCMarta.iefp.local,080027A1B2C1,,910586695,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+11,02/20/24,20:10:22,Renew,192.168.1.102,PCRui.iefp.local,080027A1B2C2,,1359662139,0,,,,0x4D53465420352E30,MSFT 5.0,,,,0
+01,02/20/24,23:59:00,Stopped,,,,,0,6,,,,,,,,,0

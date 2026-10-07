@@ -1,0 +1,13 @@
+Microsoft DHCP Service Activity Log (log de teste, formatos mistos)
+
+ID,Date,Time,Description,IP Address,Host Name,MAC Address,User Name
+
+11,2024-02-20,08:05:11,Renew,192.168.1.101,PCMarta.iefp.local,08:00:27:A1:B2:C1,
+11,2024-02-20,08:10:21,Renew,192.168.1.102,PCRui.iefp.local,08:00:27:A1:B2:C2,
+11,2024-03-15,09:30:17,Renew,192.168.1.103,PCInes.iefp.local,08:00:27:A1:B2:C3,
+11,2024-03-15,10:15:00,Renew,192.168.1.150,PCInstavel.iefp.local,08:00:27:C0:FF:EE,
+11,2023-12-31,23:59:00,Renew,192.168.1.199,PCAnoNovo.iefp.local,AA:BB:CC:DD:EE:FF,
+11,2023-12-31,23:59:01,Renew,192.168.1.198,PCAnoNovo2.iefp.local,AA:BB:CC:DD:EE:FF,
+11,2024-05-13,11:00:00,Renew,192.168.1.170,PCDataInvalida.iefp.local,ZZ:ZZ:ZZ:ZZ:ZZ:ZZ,
+11,99/99/24,12:00:00,Renew,192.168.1.171,PCDataMalFormada.iefp.local,08:00:27:FF:FF:FF,
+11,2024-02-20,13:00:00,Renew,192.168.1.172,PCSemMAC.iefp.local,,

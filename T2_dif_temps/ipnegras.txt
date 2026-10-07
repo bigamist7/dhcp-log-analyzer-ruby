@@ -1,0 +1,11 @@
+# IPs negros (blacklist) para o dif_temps.rb
+# Um IP ou uma gama CIDR por linha. Linhas em branco e comentários (#) são ignorados.
+
+# IPs individuais
+206.168.34.212
+34.192.125.239
+34.171.244.191
+131.161.184.58
+
+# Gamas CIDR (exemplo, remover o # para ativar)
+# 45.33.32.0/24
